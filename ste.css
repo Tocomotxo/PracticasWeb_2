@@ -1,0 +1,61 @@
+.ste-wrap { width: 100%; }
+.ste-topbar { display:flex; gap:12px; align-items:center; margin: 10px 0 14px; }
+
+.ste-status { font-size: 14px; }
+.ste-ok { color: #0a7a2f; }
+.ste-err { color: #b00020; }
+.ste-info { color: #444; }
+
+.ste-table-wrap { overflow-x: auto; }
+
+.ste-table { width: 100%; border-collapse: separate; border-spacing: 0; }
+
+.ste-table thead th {
+  text-align: center;
+  font-weight: 800;
+  padding: 16px 10px;
+  border-bottom: 1px dashed #d6d6d6;
+}
+
+.ste-table tbody td {
+  padding: 12px 10px;
+  background: #f3f3f3;
+  vertical-align: middle;
+}
+
+.ste-table tbody tr:nth-child(2n) td {
+  background: #ffffff;
+}
+
+.ste-input, .ste-select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #9aa0a6;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.ste-actions-cell { width: 140px; text-align: center; white-space: nowrap; }
+
+.ste-btn {
+  padding: 10px 12px;
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ste-btn-primary { background: #f6f6f6; }
+.ste-btn-success { border-color: #8dcf8d; background: #f6fff6; }
+
+.ste-save[disabled] { opacity: 0.6; cursor: not-allowed; }
+
+.ste-dirty td { outline: 2px solid rgba(0,0,0,0.05); }
+
+.ste-save.ste-pending { outline: 2px dashed #999; }
+.ste-save.ste-saving { opacity: 0.8; }
+.ste-save.ste-saved { background: #d8ffe2; border-color: #0a7a2f; }
+.ste-save.ste-error { background: #ffe1e1; border-color: #b00020; }
